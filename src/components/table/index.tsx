@@ -1,16 +1,19 @@
 import * as React from 'react';
+
 import {RootObject} from '../../types';
 
 export const Table = (props: RootObject) => {
     const {instruments} = props;
     const dates = instruments[0].timeSeries.entries.map((item) => item.d);
     return (
-        <table style={{width: '100%'}}>
+        <table>
             <thead>
             <tr>
-                <th style={{textAlign: 'left'}}>date</th>
-                {instruments.map((instrument, index) => <th key={`Date_${index}`}
-                style={{textAlign: 'left'}}>{`Instrument ${instrument.instrumentId}`}</th>)}
+                <th>date</th>
+                {instruments.map((instrument, index) =>
+                    <th key={`Date_${index}`}>
+                        {`Instrument ${instrument.instrumentId}`}
+                    </th>)}
             </tr>
             </thead>
             <tbody>
