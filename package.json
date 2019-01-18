@@ -29,6 +29,7 @@
     "tslint-react-a11y": "^1.0.0",
     "tslint-webpack-plugin": "^2.0.2",
     "typescript": "^3.2.2",
+    "typings-for-css-modules-loader": "^1.7.0",
     "webpack-dev-server": "^3.1.14",
     "webpack-merge": "^4.2.1"
   },
